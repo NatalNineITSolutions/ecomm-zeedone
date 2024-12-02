@@ -1,0 +1,8 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/page/account/checkout": "pages/page/account/checkout.js",
+  "/blogs/blog_detail": "pages/blogs/blog_detail.js",
+  "/layouts/Vedioslider": "pages/layouts/Vedioslider.js"
+}
