@@ -55,7 +55,7 @@ const MasterFooter = ({
                       <div>
                         <h4>KNOW IT ALL FIRST!</h4>
                         <p>
-                          Never Miss Anything From Multikart By Signing Up To
+                          Never Miss Anything From ZeedOne By Signing Up To
                           Our Newsletter.
                         </p>
                       </div>
@@ -108,9 +108,7 @@ const MasterFooter = ({
                       <LogoImage logo={logoName} />
                     </div>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam,
+                    We are a leading e-commerce platform, offering a wide range of high-quality products at competitive prices. Our mission is to provide exceptional customer service and an unparalleled shopping experience
                     </p>
                     <div className="footer-social">
                       <ul>
@@ -134,7 +132,7 @@ const MasterFooter = ({
                           </a>
                         </li>
                         <li>
-                          <a href="https://www.instagram.com/natalnine_official/?igsh=ZnBmcGZhOWg0b2to" target="_blank">
+                          <a href="https://www.instagram.com/natalnine_official/?igsh=ZnBmcGZhOWg0b2to#" target="_blank">
                             <i
                               className="fa fa-instagram"
                               aria-hidden="true"></i>
@@ -172,30 +170,30 @@ const MasterFooter = ({
                     <div className="footer-contant">
                       <ul>
                         <li>
-                          <Link href={`/shop/left_sidebar`}>
+                          <Link href={`/`}>
                             {/* <a> */}
-                            womens
+                            Home
                             {/* </a> */}
                           </Link>
                         </li>
                         <li>
-                          <Link href={`/shop/left_sidebar`}>
+                          <Link href={`/shop`}>
                             {/* <a>  */}
-                            clothing
+                       Shop
                             {/* </a> */}
                           </Link>
                         </li>
                         <li>
-                          <Link href={`/shop/left_sidebar`}>
+                          <Link href={`/blogs`}>
                             {/* <a> */}
-                            accessories
+                          Blog
                             {/* </a> */}
                           </Link>
                         </li>
                         <li>
-                          <Link href={`/shop/left_sidebar`}>
+                          <Link href={`/login-auth`}>
                             {/* <a> */}
-                            featured
+                           Login
                             {/* </a> */}
                           </Link>
                         </li>
@@ -269,26 +267,28 @@ const MasterFooter = ({
                         {/* <li>
                           <i className="fa fa-map-marker"></i>Multikart Demo
                           Store, Demo store India 345-659
-                        </li>
-                        <li>
-                          <i className="fa fa-phone"></i>Call Us: 123-456-7898
-                        </li>
-                        <li>
-                          <i className="fa fa-envelope-o"></i>Email Us:{" "}
-                          <a href="#">Support@Fiot.com</a>
-                        </li>
-                        <li>
-                          <i className="fa fa-fax"></i>Fax: 123456
                         </li> */}
+
                         <li>
-                            <i className="fa fa-map-marker"></i>Multikart Demo Store, Demo store India 345-659
-                          </li>
-                          <li>
-                            <i className="fa fa-phone"></i>Call Us: +91 8122471994
-                          </li>
-                          <li>
-                            <i className="fa fa-envelope-o"></i>Email Us: <a href="#">info@natalnine.com</a>
-                          </li>
+                        <i className="fa fa-map-marker"></i>
+  Location: <a href="https://www.google.com/maps?q=Marthandam,+Kappukadu,+629162" target="_blank" className="location-link">Marthandam, Kappukadu, 629162</a>
+
+                        </li>
+                        <li>
+                         
+                        </li>
+                        <li>
+                          {/* <i className="fa fa-envelope-o"></i>Email Us:{" "}
+                          <a href="#">Support@Fiot.com</a> */}
+                          <i className="fa fa-phone"></i> 
+                          Call Us: <a href="tel:+918122471994" className="call-link">+91 8122471994</a>
+                        </li>
+                        <li>
+                          {/* <i className="fa fa-fax"></i>Fax: 123456 */}
+                          <i className="fa fa-envelope-o"></i>
+  Email Us: <a href="mailto:info@natalnine.com" className="email-link" style={{ textTransform: 'lowercase' }}>info@natalnine.com</a>
+
+                        </li>
                       </ul>
                     </div>
                   </Collapse>

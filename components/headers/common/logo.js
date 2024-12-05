@@ -5,13 +5,12 @@ const LogoImage = ({ logo }) => {
   return (
     <Fragment>
       <Link href={"/"}>
-        {/* <a> */}
         <img
           src={`/assets/images/icon/${logo ? logo : "logo.png"}`}
-          alt=""
+          alt="Logo"
           className="img-fluid"
+          style={{ width: "230px", height: "auto" , marginLeft: "-15px"}} // Adjust width and height as needed
         />
-        {/* </a> */}
       </Link>
     </Fragment>
   );

@@ -1,4 +1,3 @@
-import React from "react";
 import CommonLayout from "../../components/shop/common-layout";
 import { Container, Media, Row, Col, Card, CardBody } from "reactstrap";
 import Slider from "react-slick";

@@ -41,7 +41,7 @@
 //       //     { path: "/layouts/Basics/Parallax", title: "Parallax", type: "link" },
 //       //     { path: "/layouts/Basics/Fullpage", title: "Full Page", type: "link" },
 //       //   ],
-//       // // },
+//       // },
 //       // { path: "/layouts/Beauty", title: "Beauty", type: "link" },
 //       // {
 //       //   title: "electronic",
@@ -61,21 +61,21 @@
 //       // { path: "/layouts/Flowers", title: "Flowers", type: "link" },
 //     ],
 //   },
-//   {
-//     title: "Shop",
-//     type: "sub",
-//     children: [
-//       { path: "/shop/left_sidebar", title: "Left Sidebar", type: "link" },
-//       // { path: "/shop/right_sidebar", title: "Right Sidebar", type: "link" },
-//       // { path: "/shop/no_sidebar", title: "No Sidebar", type: "link" },
-//       // { path: "/shop/sidebar_popup", title: "Sidebar Popup", type: "link" },
-//       // { path: "/shop/metro", title: "Metro", type: "link", tag: "new" },
-//       // { path: "/shop/full_width", title: "Full Width", type: "link", tag: "new" },
-//       // { path: "/shop/three_grid", title: "3 Grid", type: "link" },
-//       // { path: "/shop/six_grid", title: "6 Grid", type: "link" },
-//       // { path: "/shop/list_view", title: "List View", type: "link" },
-//     ],
-//   },
+//   // {
+//   //   title: "Shop",
+//   //   type: "sub",
+//   //   children: [
+//   //     { path: "/shop/left_sidebar", title: "Left Sidebar", type: "link" },
+//   //     // { path: "/shop/right_sidebar", title: "Right Sidebar", type: "link" },
+//   //     // { path: "/shop/no_sidebar", title: "No Sidebar", type: "link" },
+//   //     // { path: "/shop/sidebar_popup", title: "Sidebar Popup", type: "link" },
+//   //     // { path: "/shop/metro", title: "Metro", type: "link", tag: "new" },
+//   //     // { path: "/shop/full_width", title: "Full Width", type: "link", tag: "new" },
+//   //     // { path: "/shop/three_grid", title: "3 Grid", type: "link" },
+//   //     // { path: "/shop/six_grid", title: "6 Grid", type: "link" },
+//   //     // { path: "/shop/list_view", title: "List View", type: "link" },
+//   //   ],
+//   // },
 //   // {
 //   //   title: "Products",
 //   //   type: "sub",
@@ -153,10 +153,10 @@
 //         type: "sub",
 //         children: [
 //           // { path: "/portfolio/grid-2", title: "Portfolio Grid 2", type: "link", icon: "alert" },
-//           { path: "/portfolio/grid-3", title: "Portfolio Grid 3", type: "link", icon: "layout-accordion-merged" },
+//           // { path: "/portfolio/grid-3", title: "Portfolio Grid 3", type: "link", icon: "layout-accordion-merged" },
 //           // { path: "/portfolio/grid-4", title: "Portfolio Grid 4", type: "link", icon: "layers" },
 //           // { path: "/portfolio/masonry-grid-2", title: "masonry Grid 2", type: "link", icon: "write" },
-//           // { path: "/portfolio/masonry-grid-3", title: "masonry Grid 3", type: "link", icon: "map-alt" },
+//           { path: "/portfolio/masonry-grid-3", title: "masonry Grid 3", type: "link", icon: "map-alt" },
 //           // { path: "/portfolio/masonry-grid-4", title: "masonry Grid 4", type: "link", icon: "map-alt" },
 //           // { path: "/portfolio/masonry-full-width", title: "masonry Full Width", type: "link", icon: "map-alt" },
 //         ],
@@ -260,12 +260,28 @@
 //     title: "Blogs",
 //     type: "sub",
 //     children: [
-//       { path: "/blogs/blog_left_sidebar", title: "blog left sidebar", type: "link" },
-//       { path: "/blogs/blog_right_sidebar", title: "blog right sidebar", type: "link" },
-//       { path: "/blogs/no_sidebar", title: "no sidebar", type: "link" },
+//       // { path: "/blogs/blog_left_sidebar", title: "blog left sidebar", type: "link" },
+//       // { path: "/blogs/blog_right_sidebar", title: "blog right sidebar", type: "link" },
+//       // { path: "/blogs/no_sidebar", title: "no sidebar", type: "link" },
 //       { path: "/blogs/blog_detail", title: "blog detail", type: "link" },
 //     ],
 //   },
+
+//   // {
+//   //   title: "Login",
+//   //   type: "sub", // Added 'type' for consistency with 'Blogs'
+//   //   children: [ // Changed 'links' to 'children'
+//   //     { path: "/page/account/login", title: "login", type: "link" },
+//   //     // { path: "/page/account/login-auth", title: "login-auth", type: "link" },
+//   //     // { path: "/page/account/register", title: "register", type: "link" }
+//   //   ]
+//   // }
+// {
+  
+// }
+  
+  
+  
 // ];
 
 
@@ -273,27 +289,42 @@ export const MENUITEMS = [
   {
     title: "Home",
     type: "link", // Directly links to the specified path
-    path: "/layouts/Vedioslider", // Path for Home to navigate directly to Vedioslider
+    path: "/", // Path for Home to navigate directly to Vedioslider
   },
   {
     title: "Shop",
     type: "link", // Directly links to the specified path
-    path: "/shop/left_sidebar", // Path for Shop to navigate directly to Left Sidebar
+    path: "/shop", // Path for Shop to navigate directly to Left Sidebar
   },
+  // {
+  //   title: "Features",
+  //   type: "link", // Directly links to the specified path
+  //   path: "/features", // Path for Features to navigate directly to Portfolio Grid 3
+  // },
   {
-    title: "Features",
+    title: "Blog",
     type: "link", // Directly links to the specified path
-    path: "/portfolio/grid-3", // Path for Features to navigate directly to Portfolio Grid 3
+    path: "/blogs", // Path for Blogs to navigate directly to Blog Detail
   },
   {
-    title: "Blogs",
-    type: "link", // Directly links to the specified path
-    path: "/blogs/blog_detail", // Path for Blogs to navigate directly to Blog Detail
-  },
-  {
-    path: "/page/account/login-auth", // The path it links to when clicked
+    path: "/login-auth", // The path it links to when clicked
     title: "Login", // The title of the menu item
     type: "link" // Indicates it's a link (not a sub-menu)
-  }
-  
+  }
+// /    {
+//    title: "Shop",
+//      type: "sub",
+//   children: [
+//       { path: "/shop/left_sidebar", title: "Left Sidebar", type: "link" },
+//    { path: "/shop/right_sidebar", title: "Right Sidebar", type: "link" },
+//   { path: "/shop/no_sidebar", title: "No Sidebar", type: "link" },
+//    { path: "/shop/sidebar_popup", title: "Sidebar Popup", type: "link" },
+//    { path: "/shop/metro", title: "Metro", type: "link", tag: "new" },
+//    { path: "/shop/full_width", title: "Full Width", type: "link", tag: "new" },
+//    { path: "/shop/three_grid", title: "3 Grid", type: "link" },
+//    { path: "/shop/six_grid", title: "6 Grid", type: "link" },
+//    { path: "/shop/list_view", title: "List View", type: "link" },
+//    ],
+//    },
+  
 ];

@@ -14,7 +14,7 @@ const TopBarDark = ({ topClass, fluid }) => {
       <Container fluid={fluid}>
         <Row>
           <Col lg="6">
-            <div className="header-contact">
+            {/* <div className="header-contact">
               <ul>
                 <li>Welcome to Our store Multikart</li>
                 <li>
@@ -22,36 +22,36 @@ const TopBarDark = ({ topClass, fluid }) => {
                   Call Us: 123 - 456 - 7890
                 </li>
               </ul>
-            </div>
+            </div> */}
           </Col>
           <Col lg="6" className="text-end">
             <ul className="header-dropdown">
               <li className="mobile-wishlist">
                 <Link href="/page/account/wishlist">
                   {/* <a> */}
-                  <i className="fa fa-heart" aria-hidden="true"></i> wishlist
+                  {/* <i className="fa fa-heart" aria-hidden="true"></i> wishlist */}
                   {/* </a> */}
                 </Link>
               </li>
               <li className="onhover-dropdown mobile-account">
-                <i className="fa fa-user" aria-hidden="true"></i> My Account
+                {/* <i className="fa fa-user" aria-hidden="true"></i> My Account */}
                 <ul className="onhover-show-div">
                   <li>
                     <Link href={`/page/account/login`}>
                       {/* <a> */}
-                      Login
+                      {/* Login */}
                       {/* </a> */}
                     </Link>
                   </li>
                   <li>
                     <Link href={`/page/account/register`}>
                       {/* <a> */}
-                      Register
+                      {/* Register */}
                       {/* </a> */}
                     </Link>
                   </li>
                   <li onClick={() => Logout()}>
-                    <a>Logout</a>
+                    {/* <a>Logout</a> */}
                   </li>
                 </ul>
               </li>

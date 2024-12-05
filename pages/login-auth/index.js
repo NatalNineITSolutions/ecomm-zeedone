@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import CommonLayout from '../../../../components/shop/common-layout';
+import CommonLayout from "../../components/shop/common-layout"
 import { Container, Row, Form, Label, Input, Col } from 'reactstrap';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/router'
+import MasterFooter from '../../components/footers/common/MasterFooter';
+import { Helmet } from 'react-helmet';
 
-const Login = () => {
+
+const index = () => {
     const router = useRouter();
     const [email, setEmail] = useState("test@gmail.com");
     const [password, setPassword] = useState("test123");
@@ -30,7 +33,15 @@ const Login = () => {
     };
 
     return (
-        <CommonLayout parent="home" title="login">
+<>
+<Helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/x-icon" href={"/assets/images/favicon/1.png"} />
+                <title>Zeedone-Login</title>
+
+</Helmet>
+<CommonLayout parent="home" title="login">
+      /
             <section className="login-page section-b-space">
                 <Container>
                     <Row>
@@ -85,8 +96,13 @@ const Login = () => {
                     </Row>
                 </Container>
             </section>
+            {/* <MasterFooter/> */}
+            
         </CommonLayout>
+    
+</>
+      
     );
-};
+}
 
-export default Login;
+export default index

@@ -24,7 +24,7 @@ const Marketplace = () => {
         <link rel="icon" type="image/x-icon" href={"/assets/images/favicon/9.png"} />
       </Helmet>
       <ModalComponent />
-      <HeaderOne logoName={"logo/18.png"} headerClass="marketplace" topClass="top-header" />
+      {/* <HeaderOne logoName={"logo/18.png"} headerClass="marketplace" topClass="top-header" /> */}
       <HomeSlider />
       <Collections />
       <Paragraph title="title1 section-t-space" inner="title-inner1" line={false} />
@@ -33,7 +33,7 @@ const Marketplace = () => {
       <ProductSlider type="marketplace" />
       <ServiceLayout sectionClass={"service border-section small-section"} />
       <Instagram type="fashion" />
-      <MasterFooter footerClass={`footer-light`} footerLayOut={"light-layout upper-footer"} footerSection={"small-section border-section border-top-0"} belowSection={"section-b-space light-layout"} newLatter={true} logoName={"logo/18.png"} />
+      {/* <MasterFooter footerClass={`footer-light`} footerLayOut={"light-layout upper-footer"} footerSection={"small-section border-section border-top-0"} belowSection={"section-b-space light-layout"} newLatter={true} logoName={"logo/18.png"} /> */}
     </Fragment>
   );
 };

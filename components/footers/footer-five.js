@@ -49,52 +49,39 @@ const FooterFive = ({ layoutClass, logoName }) => {
                             <LogoImage logo={logoName} />
                           </div>
                           <div className="social-white">
+                           
                             <ul>
-                            <div className="footer-social">
-  <ul>
-    <li>
-      <a href="https://www.facebook.com/profile.php?id=61551415510388" target="_blank">
-        <i className="fa fa-facebook" aria-hidden="true"></i>
-      </a>
-    </li>
-    <li>
-      <a href="https://twitter.com" target="_blank">
-        <i className="fa fa-twitter" aria-hidden="true"></i>
-      </a>
-    </li>
-    <li>
-      <a href="https://www.instagram.com/natalnine_official/?igsh=ZnBmcGZhOWg0b2to" target="_blank">
-        <i className="fa fa-instagram" aria-hidden="true"></i>
-      </a>
-    </li>
-  </ul>
-</div>
-
-                              {/* <li>
-                                <a href="https://www.facebook.com" target="_blank">
-                                  <i className="fa fa-facebook" aria-hidden="true"></i>
-                                </a>
-                              </li>
-                              <li>
-                                <a href="https://plus.google.com" target="_blank">
-                                  <i className="fa fa-google-plus" aria-hidden="true"></i>
-                                </a>
-                              </li>
-                              <li>
-                                <a href="https://twitter.com" target="_blank">
-                                  <i className="fa fa-twitter" aria-hidden="true"></i>
-                                </a>
-                              </li>
-                              <li>
-                                <a href="https://www.instagram.com" target="_blank">
-                                  <i className="fa fa-instagram" aria-hidden="true"></i>
-                                </a>
-                              </li>
-                              <li>
-                                <a href="https://rss.com" target="_blank">
-                                  <i className="fa fa-rss" aria-hidden="true"></i>
-                                </a>
-                              </li> */}
+                        <li>
+                          <a href="https://www.facebook.com/profile.php?id=61551415510388" target="_blank">
+                            <i
+                              className="fa fa-facebook"
+                              aria-hidden="true"></i>
+                          </a>
+                        </li>
+                        {/* <li>
+                          <a href="https://plus.google.com" target="_blank">
+                            <i
+                              className="fa fa-google-plus"
+                              aria-hidden="true"></i>
+                          </a>
+                        </li> */}
+                        <li>
+                          <a href="https://twitter.com" target="_blank">
+                            <i className="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.instagram.com/natalnine_official/?igsh=ZnBmcGZhOWg0b2to#" target="_blank">
+                            <i
+                              className="fa fa-instagram"
+                              aria-hidden="true"></i>
+                          </a>
+                        </li>
+                        {/* <li>
+                          <a href="https://rss.com" target="_blank">
+                            <i className="fa fa-rss" aria-hidden="true"></i>
+                          </a>
+                        </li> */}
                             </ul>
                           </div>
                         </div>
@@ -133,13 +120,12 @@ const FooterFive = ({ layoutClass, logoName }) => {
                       <Collapse isOpen={width ? (collapse === 2 ? isOpen : false) : true}>
                         <div className="footer-contant">
                           <ul className="contact-details">
-                             <li>Multikart Demo Store, Demo store India 345-659</li>
-                            <li>Call Us: +91 8122471994</li>
+                            <li>Multikart Demo Store, Demo store India 345-659</li>
+                            <li>Call Us: 123-456-7898</li>
                             <li>
-                              Email Us: <a href="#">info@natalnine.com</a>
+                              Email Us: <a href="#">Support@Fiot.com</a>
                             </li>
-                            <li>Fax: 123456</li> 
-                            
+                            <li>Fax: 123456</li>
                           </ul>
                         </div>
                       </Collapse>

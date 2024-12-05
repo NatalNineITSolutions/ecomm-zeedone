@@ -1,8 +1,9 @@
 import React from 'react';
-import CommonLayout from '../../components/shop/common-layout';
-import GridTwoPage from '../../pages/portfolio/grid-2';
+import CommonLayout from '../../components/shop/common-layout'
+import GridTwoPage from '../../pages/portfolio/common/grid-2-page';
 // import { withApollo } from '../../helpers/apollo/apollo';
-const index = () => {
+
+const GridThree = () => {
     return (
         <CommonLayout parent="home" title="Portfolio">
             <GridTwoPage colClass="col-lg-4 col-sm-6" limit='9' />
@@ -10,4 +11,4 @@ const index = () => {
     )
 }
 
-export default index;
+export default GridThree;

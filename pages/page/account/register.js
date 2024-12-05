@@ -35,7 +35,7 @@ const Register = () => {
                                                 placeholder="Enter your password" required="" />
                                         </Col>
                                         <Col md="12">
-                                            <a href="#" className="btn btn-solid w-auto">create Account</a>
+                                            <a href="/re" className="btn btn-solid w-auto">create Account</a>
                                         </Col>
                                     </Row>
                                 </Form>

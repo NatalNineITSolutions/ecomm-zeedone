@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import NavBar from "./common/navbar";
-import SideBar from "./common/sidebar";
+// import SideBar from "./common/sidebar";
 import Currency from "./common/currency";
 import CartContainer from "../containers/CartContainer";
 import TopBar from "./common/topbar";
@@ -10,6 +10,7 @@ import search from "../../public/assets/images/icon/search.png";
 import settings from "../../public/assets/images/icon/setting.png";
 import cart from "../../public/assets/images/icon/layout4/cart.png";
 import SearchOverlay from "./common/search-overlay";
+import Login from "../../pages/page/account/login-auth";
 
 const HeaderTen = ({ logoName, topClass, headerClass }) => {
   /*=====================
@@ -55,7 +56,7 @@ const HeaderTen = ({ logoName, topClass, headerClass }) => {
                           </div>
                         </a>
                         {/*SideBar Navigation Component*/}
-                        <SideBar />
+                        {/* <SideBar /> */}
                       </div>
                       <div className="menu-right pull-right">
                         <NavBar />
@@ -98,6 +99,7 @@ const HeaderTen = ({ logoName, topClass, headerClass }) => {
               </Col>
             </Row>
           </Container>
+          <Login/>
         </div>
       </header>
       <SearchOverlay />

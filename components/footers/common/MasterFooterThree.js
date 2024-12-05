@@ -70,52 +70,39 @@ const MasterFooterThree = ({ layoutClass, footerSectionLayout, logoName, footerC
                       </div>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
                       <div className="footer-social">
+                        
                         <ul>
-                          {/* <li>
-                            <a href="https://www.facebook.com" target="_blank">
-                              <i className="fa fa-facebook" aria-hidden="true"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="https://plus.google.com" target="_blank">
-                              <i className="fa fa-google-plus" aria-hidden="true"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="https://twitter.com" target="_blank">
-                              <i className="fa fa-twitter" aria-hidden="true"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="https://www.instagram.com" target="_blank">
-                              <i className="fa fa-instagram" aria-hidden="true"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="https://rss.com" target="_blank">
-                              <i className="fa fa-rss" aria-hidden="true"></i>
-                            </a>
-                          </li> */}
-                          <div className="footer-social">
-  <ul>
-    <li>
-      <a href="https://www.facebook.com/profile.php?id=61551415510388" target="_blank">
-        <i className="fa fa-facebook" aria-hidden="true"></i>
-      </a>
-    </li>
-    <li>
-      <a href="https://twitter.com" target="_blank">
-        <i className="fa fa-twitter" aria-hidden="true"></i>
-      </a>
-    </li>
-    <li>
-      <a href="https://www.instagram.com/natalnine_official/?igsh=ZnBmcGZhOWg0b2to" target="_blank">
-        <i className="fa fa-instagram" aria-hidden="true"></i>
-      </a>
-    </li>
-  </ul>
-</div>
-
+                        <li>
+                          <a href="https://www.facebook.com/profile.php?id=61551415510388" target="_blank">
+                            <i
+                              className="fa fa-facebook"
+                              aria-hidden="true"></i>
+                          </a>
+                        </li>
+                        {/* <li>
+                          <a href="https://plus.google.com" target="_blank">
+                            <i
+                              className="fa fa-google-plus"
+                              aria-hidden="true"></i>
+                          </a>
+                        </li> */}
+                        <li>
+                          <a href="https://twitter.com" target="_blank">
+                            <i className="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.instagram.com/natalnine_official/?igsh=ZnBmcGZhOWg0b2to#" target="_blank">
+                            <i
+                              className="fa fa-instagram"
+                              aria-hidden="true"></i>
+                          </a>
+                        </li>
+                        {/* <li>
+                          <a href="https://rss.com" target="_blank">
+                            <i className="fa fa-rss" aria-hidden="true"></i>
+                          </a>
+                        </li> */}
                         </ul>
                       </div>
                     </div>
@@ -194,9 +181,9 @@ const MasterFooterThree = ({ layoutClass, footerSectionLayout, logoName, footerC
                           <li>
                             <a href="#">secure shopping</a>
                           </li>
-                          {/* <li>
+                          <li>
                             <a href="#">gallary</a>
-                          </li> */}
+                          </li>
                           <li>
                             <a href="#">affiliates</a>
                           </li>
@@ -229,14 +216,14 @@ const MasterFooterThree = ({ layoutClass, footerSectionLayout, logoName, footerC
                             <i className="fa fa-map-marker"></i>Multikart Demo Store, Demo store India 345-659
                           </li>
                           <li>
-                            <i className="fa fa-phone"></i>Call Us: +91 8122471994
+                            <i className="fa fa-phone"></i>Call Us: 123-456-7898
                           </li>
                           <li>
-                            <i className="fa fa-envelope-o"></i>Email Us: <a href="#">info@natalnine.com</a>
+                            <i className="fa fa-envelope-o"></i>Email Us: <a href="#">Support@Fiot.com</a>
                           </li>
-                          {/* <li>
+                          <li>
                             <i className="fa fa-fax"></i>Fax: 123456
-                          </li> */}
+                          </li>
                         </ul>
                       </div>
                     </Collapse>

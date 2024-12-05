@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import NavBar from "./common/navbar";
-import SideBar from "./common/sidebar";
+// import SideBar from "./common/sidebar";
 import TopBarDark from "./common/topbar-dark";
 import LogoImage from "./common/logo";
 import Cart from "../containers/Cart";
 import CartContainer from "../containers/CartContainer";
 import { Media, Row, Col, Container } from "reactstrap";
 import search from "../../public/assets/images/icon/search.png";
-import settings from "../../public/assets/images/icon/setting.png";
+// import settings from "../../public/assets/images/icon/setting.png";
 import cart from "../../public/assets/images/icon/cart.png";
-import Currency from "./common/currency";
+// import Currency from "./common/currency";
 import SearchOverlay from "./common/search-overlay";
 
 const HeaderFive = ({ logoName, topClass, direction }) => {
@@ -82,7 +82,7 @@ const HeaderFive = ({ logoName, topClass, direction }) => {
                         ></i>
                       </div>
                     </a>
-                    <SideBar />
+                    {/* <SideBar /> */}
                   </div>
                 </div>
                 <div className="menu-right pull-right">
@@ -106,7 +106,7 @@ const HeaderFive = ({ logoName, topClass, direction }) => {
                             ></i>
                           </div>
                         </li>
-                        <Currency icon={settings.src} />
+                        {/* <Currency icon={settings.src} /> */}
                         {/*Header Cart Component */}
                         {direction === undefined ? (
                           <CartContainer icon={cart.src} />

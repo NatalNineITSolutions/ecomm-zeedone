@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from "react";
 import cart from "../../public/assets/images/icon/cart.png";
 import NavBar from "./common/navbar";
-import SideBar from "./common/sidebar";
+// import SideBar from "./common/sidebar";
 import Cart from "../containers/Cart";
 import CartContainer from "../containers/CartContainer";
 import TopBar from "./common/topbar-dark";
 import { Media, Container, Row, Col } from "reactstrap";
 import LogoImage from "./common/logo";
 import search from "../../public/assets/images/icon/search.png";
-import settings from "../../public/assets/images/icon/setting.png";
+// import settings from "../../public/assets/images/icon/setting.png";
 import Currency from "./common/currency";
 import SearchOverlay from "./common/search-overlay";
+import Login from "../../pages/page/account/login";
 
 const HeaderTwo = ({ logoName, headerClass, topClass, direction }) => {
   useEffect(() => {
@@ -52,7 +53,7 @@ const HeaderTwo = ({ logoName, headerClass, topClass, direction }) => {
                       </div>
                     </a>
                     {/*SideBar Navigation Component*/}
-                    <SideBar />
+                    {/* <SideBar /> */}
                   </div>
                 </div>
                 <div className="brand-logo layout2-logo">
@@ -100,6 +101,7 @@ const HeaderTwo = ({ logoName, headerClass, topClass, direction }) => {
             </Col>
           </Row>
         </Container>
+        <Login />
       </header>
 
       <SearchOverlay />

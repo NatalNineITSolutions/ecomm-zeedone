@@ -8,9 +8,10 @@ import heart from "../../public/assets/images/jewellery/icon/heart.png";
 import avatar from "../../public/assets/images/jewellery/icon/avatar.png";
 import Currency from "./common/currency";
 import cart from "../../public/assets/images/jewellery/icon/cart.png";
-import settings from "../../public/assets/images/jewellery/icon/controls.png";
+// import settings from "../../public/assets/images/jewellery/icon/controls.png";
 import CartContainer from "../containers/CartContainer";
 import SearchOverlay from "./common/search-overlay";
+import Login from "../../pages/page/account/login-auth";
 
 const HeaderSeven = ({ logoName }) => {
   useEffect(() => {
@@ -98,6 +99,7 @@ const HeaderSeven = ({ logoName }) => {
             </Col>
           </Row>
         </Container>
+        <Login/>
       </header>
       <SearchOverlay />
     </>

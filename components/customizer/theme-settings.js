@@ -26,7 +26,7 @@ const ThemeSettings = () => {
   const [modal, setModal] = useState(false);
   const toggle = () => setModal(!modal);
 
-  console.log("rtl", layoutState);
+  // console.log("rtl", layoutState);
 
   /*=====================
      Tap on Top
@@ -279,13 +279,13 @@ const ThemeSettings = () => {
 
   return (
     <div>
-      <a href={null} onClick={() => openSetting()}>
+      {/* <a href={null} onClick={() => openSetting()}>
         <div className="setting-sidebar" id="setting-icon">
           <div>
             <i className="fa fa-cog" aria-hidden="true"></i>
           </div>
         </div>
-      </a>
+      </a> */}
       <div id="setting_box" className="setting-box">
         <a href="# " className="overlay" onClick={() => closeSetting()}></a>
         <div className="setting_box_body">
@@ -490,7 +490,7 @@ const ThemeSettings = () => {
           </div>
         </div>
       </div>
-      <div className="addcart_btm_popup" id="fixed_cart_icon">
+      {/* <div className="addcart_btm_popup" id="fixed_cart_icon">
         <a href={null} className="fixed_cart">
           <i
             className="fa fa-clone"
@@ -498,7 +498,7 @@ const ThemeSettings = () => {
             onClick={toggle}
             title="Configuration"></i>
         </a>
-      </div>
+      </div> */}
       <Modal centered={true} isOpen={modal} toggle={toggle}>
         <ModalHeader toggle={toggle}>Config</ModalHeader>
         <ModalBody className="p-3">

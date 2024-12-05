@@ -1,11 +1,21 @@
 import React from "react";
 import { Container, Form, Input, Label, Media, Row, Col } from "reactstrap";
 import CommonLayout from "../../components/shop/common-layout";
+import { Helmet } from "react-helmet";
 
-
-const Index = () => {
+const index = () => {
     return (
-        <CommonLayout parent="home" title="blog" subTitle="blog detail">
+
+        <>
+        <Helmet>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+              {/* <Head>
+              <link rel="icon" type="image/x-icon" href={favicon} />
+            </Head> */}
+            <link rel="icon" type="image/x-icon" href={"/assets/images/favicon/1.png"} />
+              <title>Zeedone-Blogs </title>
+        </Helmet>
+             <CommonLayout parent="home" title="blog" subTitle="blog detail">
           <section className="blog-detail-page section-b-space ratio2_3">
             <Container>
               <Row>
@@ -170,7 +180,9 @@ const Index = () => {
             </Container>
           </section>
         </CommonLayout>
+        </>
+   
       );
 }
 
-export default Index
+export default index

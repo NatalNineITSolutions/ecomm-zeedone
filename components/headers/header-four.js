@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import NavBar from "./common/navbar";
-import SideBar from "./common/sidebar";
+// import SideBar from "./common/sidebar";
 import TopBar from "./common/topbar-dark";
 import cart from "../../public/assets/images/icon/cart.png";
 import CartContainer from "../containers/CartContainer";
 import LogoImage from "./common/logo";
 import { Container, Col, Row, Media } from "reactstrap";
-import Currency from "./common/currency";
-import settings from "../../public/assets/images/icon/setting.png";
+// import Currency from "./common/currency";
+// import settings from "../../public/assets/images/icon/setting.png";
 import SearchOverlay from "./common/search-overlay";
 
 const HeaderFour = ({ logoName, topClass, fluid, hfluid }) => {
@@ -55,7 +55,7 @@ const HeaderFour = ({ logoName, topClass, fluid, hfluid }) => {
                       </div>
                     </a>
                     {/*SideBar Navigation Component*/}
-                    <SideBar />
+                    {/* <SideBar /> */}
                   </div>
                   <div className="brand-logo">
                     <LogoImage logo={logoName} />
@@ -82,8 +82,8 @@ const HeaderFour = ({ logoName, topClass, fluid, hfluid }) => {
                             ></i>
                           </div>
                         </li>
-
-                        <Currency icon={settings.src} />
+{/* 
+                        <Currency icon={settings.src} /> */}
                         {/*Header Cart Component */}
                         <CartContainer icon={cart.src} />
                       </ul>

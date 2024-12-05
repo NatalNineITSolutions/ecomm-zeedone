@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from "react";
 import NavBar from "./common/navbar";
-import SideBar from "./common/sidebar";
+// import SideBar from "./common/sidebar";
 import TopBarDark from "./common/topbar-dark";
 import LogoImage from "./common/logo";
 import { Media, Container, Row, Col } from "reactstrap";
 import CartContainer from "../containers/CartContainer";
 import search from "../../public/assets/images/icon/layout4/search.png";
-import settings from "../../public/assets/images/icon/layout4/setting.png";
+// import settings from "../../public/assets/images/icon/layout4/setting.png";
 import cart from "../../public/assets/images/icon/cart.png";
-import Currency from "./common/currency";
+// import Currency from "./common/currency";
 import SearchOverlay from "./common/search-overlay";
+import Login from "../../pages/page/account/login-auth";
 
 const HeaderEight = ({ logoName }) => {
   useEffect(() => {
@@ -47,10 +48,11 @@ const HeaderEight = ({ logoName }) => {
                         ></i>
                       </div>
                     </a>
-                    <SideBar />
+                    {/* <SideBar /> */}
                   </div>
                   <div className="main-menu-right">
                     <NavBar />
+                    
                   </div>
                 </div>
               </Col>
@@ -79,9 +81,13 @@ const HeaderEight = ({ logoName }) => {
                           </div>
                           <SearchOverlay />
                         </li>
-                        <Currency icon={settings.src} />
+                        {/* <Currency icon={settings.src} /> */}
                         <CartContainer icon={cart.src} />
+                        
                       </ul>
+                    </div>
+                    <div>
+                    
                     </div>
                   </div>
                 </div>

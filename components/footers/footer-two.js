@@ -16,55 +16,39 @@ const FooterTwo = (props) => {
                     <LogoImage logo={props.logoName} />
                   </div>
                   <div className="social-white">
+                    
                     <ul>
-                      {/* <li>
-                        <a href="https://www.facebook.com" target="_blank">
-                          <i className="fa fa-facebook" aria-hidden="true"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://plus.google.com" target="_blank">
-                          <i
-                            className="fa fa-google-plus"
-                            aria-hidden="true"
-                          ></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://twitter.com" target="_blank">
-                          <i className="fa fa-twitter" aria-hidden="true"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.instagram.com" target="_blank">
-                          <i className="fa fa-instagram" aria-hidden="true"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://rss.com" target="_blank">
-                          <i className="fa fa-rss" aria-hidden="true"></i>
-                        </a>
-                      </li> */}
-                      <div className="footer-social">
-  <ul>
-    <li>
-      <a href="https://www.facebook.com/profile.php?id=61551415510388" target="_blank">
-        <i className="fa fa-facebook" aria-hidden="true"></i>
-      </a>
-    </li>
-    <li>
-      <a href="https://twitter.com" target="_blank">
-        <i className="fa fa-twitter" aria-hidden="true"></i>
-      </a>
-    </li>
-    <li>
-      <a href="https://www.instagram.com/natalnine_official/?igsh=ZnBmcGZhOWg0b2to" target="_blank">
-        <i className="fa fa-instagram" aria-hidden="true"></i>
-      </a>
-    </li>
-  </ul>
-</div>
-
+                        <li>
+                          <a href="https://www.facebook.com/profile.php?id=61551415510388" target="_blank">
+                            <i
+                              className="fa fa-facebook"
+                              aria-hidden="true"></i>
+                          </a>
+                        </li>
+                        {/* <li>
+                          <a href="https://plus.google.com" target="_blank">
+                            <i
+                              className="fa fa-google-plus"
+                              aria-hidden="true"></i>
+                          </a>
+                        </li> */}
+                        <li>
+                          <a href="https://twitter.com" target="_blank">
+                            <i className="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.instagram.com/natalnine_official/?igsh=ZnBmcGZhOWg0b2to#" target="_blank">
+                            <i
+                              className="fa fa-instagram"
+                              aria-hidden="true"></i>
+                          </a>
+                        </li>
+                        {/* <li>
+                          <a href="https://rss.com" target="_blank">
+                            <i className="fa fa-rss" aria-hidden="true"></i>
+                          </a>
+                        </li> */}
                     </ul>
                   </div>
                   <div className="footer-title footer-mobile-title">

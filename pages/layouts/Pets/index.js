@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import MainBanner from "./component/MainBanner";
-import LogoBlock from "../../../components/common/logo-block";
+// import LogoBlock from "../../../components/common/logo-block";
 import BannerSection from "./component/BannerSection";
 import ParallaxBanner from "./component/ParallaxBanner";
 import Blog from "../../../components/common/Blog/blog1";
@@ -26,7 +26,7 @@ const Pets = () => {
       <HeaderThree logoName={"logo/14.png"} />
       <MainBanner />
       <div className="section-b-space">
-        <LogoBlock />
+        {/* <LogoBlock /> */}
       </div>
       <BannerSection />
       <TopCollection inner="title-inner1" innerClass="title1 title5" titleClass={true} type="pets" title="top collection" subtitle="special offer" designClass="section-b-space j-box pets-box ratio_square" productSlider={Product4} noSlider={true} cartClass="cart-info cart-wrap" />

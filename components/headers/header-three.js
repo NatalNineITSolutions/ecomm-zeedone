@@ -5,10 +5,11 @@ import Currency from "./common/currency";
 import TopBarDark from "./common/topbar-dark";
 import LogoImage from "./common/logo";
 import { Container, Row, Col, Input, Media } from "reactstrap";
-import settings from "../../public/assets/images/icon/setting.png";
+// import settings from "../../public/assets/images/icon/setting.png";
 import cart from "../../public/assets/images/icon/cart.png";
 import SearchOverlay from "./common/search-overlay";
 import search from "../../public/assets/images/icon/search.png";
+import Login from "../../pages/page/account/login-auth";
 
 const HeaderThree = (props) => {
   /*=====================
@@ -97,7 +98,7 @@ const HeaderThree = (props) => {
                             ></i>
                           </div>
                         </li>
-                        <Currency icon={settings.src} />
+                        {/* <Currency icon={settings.src} /> */}
                         {/*Header Cart Component */}
                         <CartContainer icon={cart.src} />
                       </ul>
@@ -117,6 +118,7 @@ const HeaderThree = (props) => {
             </Col>
           </Row>
         </Container>
+        <Login/>
       </header>
       <SearchOverlay />
     </div>

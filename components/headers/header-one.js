@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import NavBar from "./common/navbar";
-import SideBar from "./common/sidebar";
+// import SideBar from "./common/sidebar";
 import Cart from "../containers/Cart";
 import CartContainer from "../containers/CartContainer";
 import TopBarDark from "./common/topbar-dark";
@@ -9,7 +9,7 @@ import LogoImage from "./common/logo";
 import search from "../../public/assets/images/icon/search.png";
 import settings from "../../public/assets/images/icon/setting.png";
 import cart from "../../public/assets/images/icon/cart.png";
-import Currency from "./common/currency";
+// import Currency from "./common/currency";
 import { useRouter } from "next/router";
 import SearchOverlay from "./common/search-overlay";
 
@@ -93,7 +93,7 @@ const HeaderOne = ({
                       </div>
                     </a>
                     {/*SideBar Navigation Component*/}
-                    <SideBar />
+                    {/* <SideBar /> */}
                   </div>
                   <div className="brand-logo">
                     <LogoImage logo={logoName} />
@@ -120,7 +120,7 @@ const HeaderOne = ({
                             ></i>
                           </div>
                         </li>
-                        <Currency icon={settings.src} />
+                        {/* <Currency icon={settings.src} /> */}
                         {/*Header Cart Component */}
                         {direction === undefined ? (
                           // <></>

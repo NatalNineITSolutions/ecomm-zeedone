@@ -1,13 +1,14 @@
 import React from "react";
-import SideBar from "./common/sidebar";
+// import SideBar from "./common/sidebar";
 import { Media, Container, Row, Col } from "reactstrap";
 import search from "../../public/assets/images/icon/search.png";
-import settings from "../../public/assets/images/icon/setting.png";
+// import settings from "../../public/assets/images/icon/setting.png";
 import cart from "../../public/assets/images/icon/cart.png";
 import Currency from "./common/currency";
 import CartContainer from "../containers/CartContainer";
 import LogoImage from "./common/logo";
 import SearchOverlay from "./common/search-overlay";
+import Login from "../../pages/page/account/login-auth";
 
 const HeaderTwale = ({ logoName }) => {
   const openNav = () => {
@@ -38,7 +39,7 @@ const HeaderTwale = ({ logoName }) => {
                         ></i>
                       </div>
                     </a>
-                    <SideBar />
+                    {/* <SideBar /> */}
                   </div>
                   <div className="brand-logo">
                     <LogoImage logo={logoName} />
@@ -73,6 +74,7 @@ const HeaderTwale = ({ logoName }) => {
             </Col>
           </Row>
         </Container>
+        <Login/>
       </header>
       <SearchOverlay />
     </>

@@ -9,7 +9,8 @@ const CopyRight = ({layout, fluid}) => {
                     <Row>
                         <Col xl="6" md="6" sm="12">
                             <div className="footer-end">
-                                <p><i className="fa fa-copyright" aria-hidden="true"></i>   2024, ZeedOne </p>
+                                <p><i className="fa fa-copyright" aria-hidden="true"></i> 2024 Zeedone
+                                       </p>
                             </div>
                         </Col>
                         <Col xl="6" md="6" sm="12">
