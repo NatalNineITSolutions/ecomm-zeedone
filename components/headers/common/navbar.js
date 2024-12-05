@@ -20,6 +20,7 @@ const NavBar = () => {
   }, []);
 
   const openNav = () => {
+    
     setNavClose({ right: "0px" });
     if (router.asPath == "/layouts/Gym")
       document.querySelector("#topHeader").classList.add("zindex-class");
