@@ -13,6 +13,9 @@ import { CurrencyContextProvider } from "../helpers/Currency/CurrencyContext";
 import Helmet from "react-helmet";
 import { ApolloProvider } from "@apollo/client";
 import { useApollo } from "../helpers/apollo";
+import { QueryClient, QueryClientProvider } from 'react-query';
+
+const queryClient = new QueryClient();
 
 export default function MyApp({ Component, pageProps }) {
   const [isLoading, setIsLoading] = useState(true);
@@ -51,13 +54,14 @@ export default function MyApp({ Component, pageProps }) {
               <title>Zeedone </title>
             </Helmet>
             <div>
+            <QueryClientProvider client={queryClient}>
               <SettingProvider>
                 <CompareContextProvider>
                   <CurrencyContextProvider>
                     <CartContextProvider>
                       <WishlistContextProvider>
                         <FilterProvider>
-                          <Component {...pageProps} />
+                            <Component {...pageProps} />
                         </FilterProvider>
                       </WishlistContextProvider>
                     </CartContextProvider>
@@ -65,6 +69,7 @@ export default function MyApp({ Component, pageProps }) {
                   <ThemeSettings />
                 </CompareContextProvider>
               </SettingProvider>
+              </QueryClientProvider>
               <ToastContainer />
               <TapTop />
             </div>

@@ -2,8 +2,12 @@ import React, { useState } from 'react';
 import CommonLayout from '../../../components/shop/common-layout';
 import { Input, Container, Row, Form, Label, Col } from 'reactstrap';
 import { useRouter } from 'next/router';
+import { register } from '../../../helpers/api';
+import { useMutation } from 'react-query';
+import { toast } from 'react-toastify';
 
 const Register = () => {
+
     const router = useRouter();
 
     const [firstName, setFirstName] = useState('');
@@ -11,41 +15,32 @@ const Register = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    const handleRegister = async () => {
-        const apiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
-        const apiKey = process.env.NEXT_PUBLIC_API_KEY;
+    const { mutate, isLoading, isError, error } = useMutation(register, {
+        onSuccess: () => {
+            toast.success('Registration successful!', {
+                position: toast.POSITION.TOP_RIGHT,
+            });
+            localStorage.setItem('user', 'true');
+            router.push('/page/account/login-auth');
+        },
+        onError: (error) => {
+            toast.error('An error occurred while registering. Please try again.', {
+                position: toast.POSITION.TOP_RIGHT,
+            });
+            console.error('Error during registration:', error.response ? error.response.data : error.message);
+        },
+    });
+    
 
+    const handleRegister = () => {
         const userData = {
-            first_name: firstName,  
-            last_name: lastName,    
+            name: `${firstName} ${lastName}`,
             email: email,
             password: password,
+            email_notifications: "yes",
         };
-
-        try {
-            const response = await fetch(`${apiBaseUrl}/client`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${apiKey}`, 
-                },
-                body: JSON.stringify(userData), 
-            });
-
-            const data = await response.json();
-
-            if (response.ok) {
-                alert('Registration successful!');
-                localStorage.setItem('user', 'true');
-                router.push('/page/account/checkout'); 
-            } else {
-                alert(`Registration failed: ${data.message || 'Unknown error occurred'}`);
-                console.error('Error during registration:', data);
-            }
-        } catch (error) {
-            alert('An error occurred while registering. Please try again.');
-            console.error('Error during registration:', error);
-        }
+        console.log(userData);
+        mutate(userData);
     };
 
     return (
@@ -112,6 +107,11 @@ const Register = () => {
                                             <button type="button" className="btn btn-solid w-auto" onClick={handleRegister}>
                                                 Create Account
                                             </button>
+                                            {isError && (
+                                                <div className="text-danger mt-2">
+                                                    An error occurred: {error.response ? error.response.data.message : error.message}
+                                                </div>
+                                            )}
                                         </Col>
                                     </Row>
                                 </Form>
@@ -123,5 +123,7 @@ const Register = () => {
         </CommonLayout>
     );
 };
-
 export default Register;
+
+
+
